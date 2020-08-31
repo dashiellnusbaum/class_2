@@ -1,0 +1,15 @@
+---
+title: "class_2_datasci"
+author: "Dashiell Nusbaum"
+date: "8/31/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+```
+
