@@ -11,6 +11,20 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 library(tidyverse)
+library(gapminder)
+```
+
+```{r}
+gapminder_unfiltered %>%
+  group_by(year) %>%
+  filter(lifeExp==max(lifeExp)) %>%
+  select(country,year,lifeExp) %>%
+  ungroup() %>%
+  arrange(year)
 ```
 
 added text
+
+new branch stuff
+
+Exercise: Calculate the average life expectancy (averaging over countries) in 2000. Add this to life_exp_analysis.Rmd. Commit your changes.
